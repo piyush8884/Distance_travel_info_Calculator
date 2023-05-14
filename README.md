@@ -11,19 +11,14 @@
 
 
 
-![Screenshot (33)](https://github.com/piyush8884/Travel_info/assets/64435441/76b89d8f-ae87-4ab7-ba03-5519bc4e1ed1)
-
-
-
-
-
-![Screenshot (34)](https://github.com/piyush8884/Travel_info/assets/64435441/3cbe8b09-c3d2-4089-bdda-007869e30c7d)
+![Screenshot (34)](https://github.com/piyush8884/Distance_travel_info_Calculator/assets/64435441/ebd6d275-a4c6-4251-9632-60ed8a3e95e1)
 
 
 
 
 
 
+![Screenshot (33)](https://github.com/piyush8884/Distance_travel_info_Calculator/assets/64435441/ade19d57-954c-4081-8eea-6d705c593f47)
 
 
 
