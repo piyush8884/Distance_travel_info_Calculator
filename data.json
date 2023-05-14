@@ -1,0 +1,10 @@
+{
+    "total_kms": "1,314 km",
+    "bus_info": "22 hr 6 min",
+    "train_info": "22 hr 57 min",
+    "express_trains_available": "No express trains available.",
+    "Flight Details": {
+        "Fly Time": "1 hr 50 min",
+        "Flights": "Air-Asia <--> Indigo <--> Spice-Jet"
+    }
+}

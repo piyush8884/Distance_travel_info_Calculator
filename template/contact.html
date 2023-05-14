@@ -1,0 +1,168 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<style>
+    body{margin-top:20px;
+    background:#eee;
+    overflow: hidden;
+}
+.contact-area {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:768px) {
+    .contact {
+        margin-bottom: 60px;
+    }
+}
+
+.contact input {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #232434;
+    font-size: 16px;
+    height: 60px;
+    padding: 10px;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    padding-left: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.contact textarea {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #232434;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    padding-left: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.contact input:focus {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #232434;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.contact textarea:focus {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #232434;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.form-control::placeholder {
+    color: #232434;
+    opacity: 1;
+}
+
+.btn-contact-bg {
+    border-radius: 30px;
+    color: #fff;
+    outline: medium none !important;
+    padding: 15px 27px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background: #7564e5;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-contact-bg:hover,
+.btn-contact-bg:focus {
+    background: #232434;
+    color: #fff;
+}
+.section-title {
+  text-align: center;
+}
+.success-message {
+        background-color: #d4edda;
+        color: #155724;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+
+</style>
+<div id="contact" class="contact-area section-padding">
+	<div class="container">
+		<div class="section-title text-center">
+			<h1>Get in Touch</h1>
+			<p>The feedback provided through this distance calculator is for informational purposes only and should not be relied upon for any decisions. We do not guarantee the accuracy, completeness, or timeliness of the information provided. Use of this distance calculator is at your own risk and we shall not be liable for any loss or damage arising from the use of or reliance on any information provided.</p>
+		</div>
+		<div class="row">
+			<div class="col-lg-7">
+				<div class="contact">
+
+					<form class="form" name="enq" method="POST" action="{% url 'contact' %}">
+					{% csrf_token %}
+						<div class="row">
+							<div class="form-group col-md-6">
+								<input type="text" name="name" id="name"class="form-control" placeholder="Name" required="required">
+							</div>
+							<div class="form-group col-md-6">
+								<input type="email" name="email" id="email"class="form-control" placeholder="Email" required="required">
+							</div>
+							<div class="form-group col-md-12">
+								<input type="text" name="subject" id="subject"class="form-control" placeholder="Subject" required="required">
+							</div>
+							<div class="form-group col-md-12">
+								<textarea rows="6" id="desc" name="desc" class="form-control" placeholder="Your Message" required="required"></textarea>
+							</div>
+							<div class="col-md-12 text-center">
+								<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg" title="Submit Your Message!">Send Message</button>
+							</div>
+						</div>
+					</form>
+					<div id="success-message" class="success-message" style="display:none;">
+					    Your message has been sent successfully!
+					</div>
+				</div>
+			</div><!--- END COL -->
+			</div><!--- END COL -->
+		</div><!--- END ROW -->
+	</div><!--- END CONTAINER -->
+</div>
+<!--<script>-->
+<!--  $(document).ready(function() {-->
+<!--    $('#contact-form').submit(function(e) {-->
+<!--      e.preventDefault();-->
+<!--      $.ajax({-->
+<!--        url: 'process-form.php',-->
+<!--        type: 'POST',-->
+<!--        data: $(this).serialize(),-->
+<!--        success: function() {-->
+<!--          $('#success-message').fadeIn().delay(5000).fadeOut();-->
+<!--        }-->
+<!--      });-->
+<!--    });-->
+<!--  });-->
+<!--</script>-->
+
+
+
+
+
